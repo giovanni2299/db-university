@@ -11,7 +11,7 @@
 
 
 ## Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
-    -
+    - SELECT * FROM `students` INNER JOIN `degrees` ON `degrees`.`id` = `students`.`degree_id` ORDER BY `students`.`name` ASC, `students`.`surname` ASC; (5000)
 
 
 ## Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
