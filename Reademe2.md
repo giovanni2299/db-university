@@ -31,7 +31,7 @@
 
 
 ## Contare gli insegnanti che hanno l'ufficio nello stesso edificio
-    - 
+    - SELECT COUNT(`id`), `office_address` FROM `teachers` WHERE `office_address` = `office_address` GROUP BY `office_address`; 
 
 
 ## Calcolare la media dei voti di ogni appello d'esame
